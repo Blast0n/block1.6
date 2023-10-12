@@ -2,12 +2,11 @@ import '../../node_modules/focus-visible/dist/focus-visible';
 import '../scss/main.scss';
 import '../index.html';
 
-import './swiperFirst';
+import './swiper';
 
 
 
 let buttonCards = document.querySelector(".cards__button");
-
 let hiddenCardsItems = document.querySelectorAll(".menu__item--hidden");
 
 
@@ -24,8 +23,6 @@ buttonCards.addEventListener("click", function(event) {
 
 
 let buttonOffers  = document.querySelector(".offers__button");
-
-
 let hiddenOffersItems = document.querySelectorAll(".offers__item--hidden");
 
 buttonOffers.addEventListener("click", function(event) {
