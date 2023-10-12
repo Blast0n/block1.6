@@ -1,0 +1,41 @@
+%text-bold {
+	color: #1B1C21;
+	font-family: TT Lakes Bold;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px; /* 133.333% */
+	letter-spacing: -0.6px;
+	}
+
+%text-medium {
+	color: #1B1C21;
+	font-family: TT Lakes Medium;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+	letter-spacing: -0.2px;
+}
+
+%text-regular {
+	color: #1B1C21;
+	font-family: TT Lakes Regular;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px; /* 142.857% */
+	letter-spacing: 0.2px;
+}
+
+%modal-text {
+	color: #7E7E82;
+	font-family: TT Lakes Medium;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px; /* 114.286% */
+	span {
+		color: #FF3E79;
+	}	
+}

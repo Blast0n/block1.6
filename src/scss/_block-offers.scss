@@ -1,0 +1,111 @@
+
+// OFFERS // SWIPER //
+.offers { /////////
+	background-color: $bgColor;
+	padding-bottom: 32px;
+	.swiper-offers {
+		height: 100%;
+		@media (min-width:768px) {
+			height: 0;
+		}
+		.swiper-wrapper {
+			height: 195px;
+			padding-top: 16px;
+			padding-left: 16px;
+			.offers__item {
+				position: relative;
+				display:block;
+				width: 100%;
+				height: 160px;
+				border-radius: 6px;
+				border: 1px solid #EAEAEA;
+				background: #FFF;
+				h3 {
+					@extend %text-medium;
+					padding: 16px 0 0 16px;
+				}
+				img {
+					position: absolute;
+					bottom: 16px;
+					right: 16px;
+				}
+			}
+		}
+	}
+	&__cards {
+		display: none;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 24px;
+		gap: 24px;
+		@media (min-width:768px) {	
+			display: grid;
+		}
+		@media (min-width:1336px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			padding: 24px 31px;
+			.offers__item:nth-child(4){
+				display: block;
+			  }
+
+		}	
+		.offers__item {
+			position: relative;
+			display:block;
+			width: 100%;
+			height: 160px;
+			border-radius: 6px;
+			border: 1px solid #EAEAEA;
+			background: #FFF;
+			h3 {
+				@extend %text-medium;
+				padding: 16px 0 0 16px;
+			}
+			img {
+				position: absolute;
+				bottom: 16px;
+				right: 16px;
+			}
+		}
+		.offers__item--hidden {
+			display: none;
+		}
+	}
+	.offers__button {
+		display: none;
+		margin-left: 32px;
+		@extend %text-medium;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		text-align: center;
+	    @media (min-width:768px) {
+			display: block;		
+		}
+	  }
+	  
+	  .offers__button::before {
+		content: "";
+		background: url("../img/expand.svg");
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		position: relative;
+		top: 6px;
+	  }
+	  
+	  .button-active.offers__button span:first-child {
+		display: none;
+	  }
+	  
+	  .button-active.offers__button span:last-child {
+		display:inline-block;
+	  }
+	  
+	  .offers__button span:first-child {
+		display: inline-block;
+	  }
+	  
+	  .offers__button span:last-child {
+		display: none;
+	  }	
+}

@@ -1,0 +1,140 @@
+// BRANDS // SWIPER //
+.brands__swiper{
+    .swiper {
+   height: 120px;
+   background-color: $bgColor;
+ }
+ 
+ .swiper-wrapper {
+   padding-top: 16px;
+   padding-left: 16px;
+ 
+ }
+}
+
+ 
+.swiper-pagination .swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background: #B5B6BC;
+ 
+ }
+ 
+ .brands__cards {
+   background: #F8F8F8;
+   padding-bottom: 50px;
+ }
+
+ .cards__menu {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 24px 24px 24px 24px;
+   gap: 16px;
+ }
+ 
+ .item {
+   display: flex;  
+   justify-content: space-between;
+   align-items: center;  
+   min-width: 224px; 
+   height: 72px;
+   padding: 0px 16px 0px 16px;
+   border-radius: 6px;
+   border: 1px solid #EAEAEA;
+   background: #FFF;
+ 
+ }
+ 
+ .menu__item--hidden {
+   display: none;
+ }
+ 
+ .cards__button {
+   margin-left: 32px;
+   color: #1B1C21;
+   font-family: TT Lakes Medium;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px; /* 150% */
+   letter-spacing: -0.2px;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   text-align: center;
+ 
+ }
+ 
+ .cards__button::before {
+   content: "";
+   background: url("../img/expand.svg");
+   display: inline-block;
+   width: 24px;
+   height: 24px;
+   position: relative;
+   top: 6px;
+ }
+ 
+ .button-active.cards__button span:first-child {
+   display: none;
+ }
+ 
+ .button-active.cards__button span:last-child {
+   display:inline-block;
+ }
+ 
+ .cards__button span:first-child {
+   display: inline-block;
+ }
+ 
+ .cards__button span:last-child {
+   display: none;
+ }
+ 
+ .brands__cards {
+   display: none;
+ }
+ 
+ 
+ @media (min-width:1120px){
+ 
+   .cards__menu {
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     padding-left: 32px;
+   }
+ 
+   .menu__item {
+     min-width: 240px;
+   }
+ 
+   .menu__item:nth-child(7){
+     display: flex;
+   }
+ 
+   .menu__item:nth-child(8){
+     display: flex;
+   }
+ 
+   
+ 
+ }
+ 
+ 
+ @media (min-width:768px) {
+   .brands__swiper,
+   .swiper-offers {
+     display: none;
+   }
+   .swiper {
+     height: 0;
+   }
+ 
+   .brands__cards {
+     display: block;
+   }
+ 
+   .menu__item {
+     min-width: 224px;
+   }
+}
