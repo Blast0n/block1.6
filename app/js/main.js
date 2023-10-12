@@ -13,8 +13,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_focus_visible_dist_focus_visible__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_focus_visible_dist_focus_visible__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/main.scss */ "./scss/main.scss");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../index.html */ "./index.html");
-/* harmony import */ var _swiperFirst__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./swiperFirst */ "./js/swiperFirst.js");
-/* harmony import */ var _swiperFirst__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_swiperFirst__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./swiper */ "./js/swiper.js");
+/* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_swiper__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -99,10 +99,10 @@ buttonClosePhone.addEventListener("click", function (event) {
 
 /***/ }),
 
-/***/ "./js/swiperFirst.js":
-/*!***************************!*\
-  !*** ./js/swiperFirst.js ***!
-  \***************************/
+/***/ "./js/swiper.js":
+/*!**********************!*\
+  !*** ./js/swiper.js ***!
+  \**********************/
 /***/ (() => {
 
 var sliders = document.querySelectorAll('.swiper');
