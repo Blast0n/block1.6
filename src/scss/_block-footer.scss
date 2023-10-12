@@ -1,7 +1,9 @@
 
 ////////////////////////////////
+
 .footer__wrapper {
 	display: block;
+	padding-top: 16px;
 	@media (min-width:768px) {
 		display: flex;
 		justify-content: space-between;
@@ -11,7 +13,7 @@
 		padding: 32px 31px 25px 31px;
 	}
 	.footer__text {
-		margin: 16px 0px;
+		margin-bottom: 16px;
 		color: #7E7E82;
 		text-align: center;
 		font-family: TT Lakes Regular;

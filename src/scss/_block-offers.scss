@@ -2,7 +2,9 @@
 // OFFERS // SWIPER //
 .offers { /////////
 	background-color: $bgColor;
-	padding-bottom: 32px;
+	@media (min-width:768px) {
+		padding-bottom: 32px;
+	}
 	.swiper-offers {
 		height: 100%;
 		@media (min-width:768px) {
